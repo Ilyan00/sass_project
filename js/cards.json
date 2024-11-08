@@ -1,0 +1,50 @@
+[
+  {
+    "img": "./img/chien1.png",
+    "name": "MO231 - Pomeranian White",
+    "info": "Genre: Male . Age: 02 months",
+    "price": "6.900.000 VND"
+  },
+  {
+    "img": "./img/chien2.png",
+    "name": "MO502 - Poodle Tiny Yellow",
+    "info": "Genre: Female . Age: 02 months",
+    "price": "3.900.000 VND"
+  },
+  {
+    "img": "./img/chien3.png",
+    "name": "MO102 - Poodle Tiny Sepia",
+    "info": "Genre: Male . Age: 02 months",
+    "price": "4.000.000 VND"
+  },
+  {
+    "img": "./img/chien4.png",
+    "name": "MO512 - Alaskan Malamute Grey",
+    "info": "Genre: Male . Age: 03 months",
+    "price": "8.900.000 VND"
+  },
+  {
+    "img": "./img/chien5.png",
+    "name": "MO231 - Pembroke Corgi Cream",
+    "info": "Genre: Male . Age: 03 months",
+    "price": "7.900.000 VND"
+  },
+  {
+    "img": "./img/chien6.png",
+    "name": "MO502 - Pembroke Corgi Tricolor",
+    "info": "Genre: Female . Age: 02 months",
+    "price": "9.000.000 VND"
+  },
+  {
+    "img": "./img/chien7.png",
+    "name": "MO102 -  Pomeranian Grey",
+    "info": "Genre: Female . Age: 02 months",
+    "price": "6.500.000 VND"
+  },
+  {
+    "img": "./img/chien8.png",
+    "name": "MO512 - Poodle Tiny Dairy Cow",
+    "info": "Genre: Male . Age: 03 months",
+    "price": "5.000.000 VND"
+  }
+]

@@ -1,0 +1,60 @@
+@use "variables";
+@use "sass:color";
+
+.cta {
+  display: flex;
+  background: variables.$gradient_beige;
+  width: 100%;
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 150px;
+    width: 40%;
+  }
+  &__title {
+    font-family: "gilroy-bold";
+    margin-top: 50px;
+    font-size: 3rem;
+  }
+  &__h2 {
+    font-family: "gilroy-medium";
+    font-size: 2.2rem;
+  }
+  &__commentaire {
+    font-size: 0.7rem;
+    margin: 20px 0;
+  }
+  &__img {
+    width: 600px;
+    height: 370px;
+  }
+  &__button-container {
+    display: flex;
+  }
+  &__button {
+    width: 25%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: variables.$dark_blue;
+    border: none;
+    @if color.channel(variables.$dark_blue, "lightness", $space: hsl) > 50% {
+      color: variables.$dark_blue;
+    } @else {
+      color: variables.$white;
+    }
+    &--primary {
+      background: none;
+      border: solid 2px variables.$dark_blue;
+      color: variables.$dark_blue;
+      margin-right: 15px;
+    }
+  }
+  &__svg {
+    margin-left: 5px;
+    border: solid 1.5px variables.$dark_blue;
+    border-radius: 100%;
+  }
+}

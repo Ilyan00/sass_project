@@ -1,0 +1,50 @@
+@use "variables";
+@use "sass:color";
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: variables.$gradient_beige;
+  padding: 30px 100px;
+
+  &__recherche {
+    font-family: "gilroy-medium";
+    display: flex;
+    align-items: center;
+    background: variables.$white;
+    width: 300px;
+    padding: 10px 0px 10px 20px;
+    border-radius: 50px;
+    color: variables.$gray;
+  }
+  &__svg {
+    margin-right: 10px;
+  }
+  &__btn {
+    padding: 10px 80px;
+    border-radius: 50px;
+    margin-left: 10px;
+    border: none;
+    background: variables.$dark_blue;
+    @if color.channel(variables.$dark_blue, "lightness", $space: hsl) > 50% {
+      color: variables.$dark_blue;
+    } @else {
+      color: variables.$white;
+    }
+  }
+}
+
+.nav {
+  font-family: "gilroy-bold";
+  width: 400px;
+  margin: 0 80px;
+  &__ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  &__li {
+    list-style: none;
+  }
+}

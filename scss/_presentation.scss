@@ -1,0 +1,63 @@
+@use "variables";
+@use "sass:color";
+
+.action-section {
+  padding: 50px 100px;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: variables.$gradient_beige;
+    border-radius: 15px;
+  }
+  &__img {
+    height: 440px;
+    width: 600px;
+  }
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 30%;
+  }
+  &__h2 {
+    font-family: "gilroy-bold";
+    margin-top: 50px;
+    font-size: 3rem;
+  }
+  &__h3 {
+    font-family: "gilroy-medium";
+    font-size: 2.2rem;
+  }
+  &__p {
+    font-size: 0.7rem;
+    margin: 20px 0;
+  }
+
+  &__button-container {
+    display: flex;
+  }
+  &__button {
+    padding: 10px 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: variables.$dark_blue;
+    border: none;
+    @if color.channel(variables.$dark_blue, "lightness", $space: hsl) > 50% {
+      color: variables.$dark_blue;
+    } @else {
+      color: variables.$white;
+    }
+    &--primary {
+      background: none;
+      border: solid 2px variables.$dark_blue;
+      color: variables.$dark_blue;
+      margin-right: 15px;
+    }
+  }
+}

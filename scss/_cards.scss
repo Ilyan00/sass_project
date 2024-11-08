@@ -1,0 +1,70 @@
+@use "variables";
+@use "sass:color";
+
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 50px 100px;
+
+  &__button {
+    font-family: "gilroy-medium";
+    height: fit-content;
+    padding: 10px 40px;
+    border-radius: 50px;
+    background: none;
+    border: solid 2px variables.$dark_blue;
+  }
+}
+.news {
+  &__p {
+    font-family: "gilroy-medium";
+  }
+  &__h2 {
+    font-family: "gilroy-bold";
+  }
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 100px;
+  min-height: fit-content;
+  margin: 10px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: fit-content;
+  background: variables.$white;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  &__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    min-height: fit-content;
+    height: 180px;
+  }
+  &__name {
+    font-family: "gilroy-bold";
+    margin-top: 15px;
+  }
+  &__info {
+    margin-top: 10px;
+    font-family: "gilroy-medium";
+  }
+  &__price {
+    font-family: "gilroy-bold";
+    margin-top: 10px;
+  }
+}
